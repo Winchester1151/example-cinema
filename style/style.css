@@ -1,0 +1,375 @@
+body {
+    font-family: 'Montserrat', serif;
+    background-color: #1a1d29;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header img.logo {
+    width: 150px;
+    margin-left: 50px;
+    margin-top: -20px;
+    margin-right: 100px;
+}
+.shablon {
+    display: flex;
+    align-items: center;
+    margin: 60px;
+}
+.shablon a {
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    right: 30px;
+    color: #fff;
+    font-size: 25px;
+}
+.shablon a::after {
+    content: ""; 
+    position: absolute;
+    left: 50%;
+    bottom: 0; 
+    width: 0; 
+    height: 3px; 
+    background: rgba(82, 125, 170, 0.61);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+.shablon a:hover::after {
+    width: 100%; 
+    left: 0;
+}
+#plus {
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 62%);
+    color: #fff;
+    font-family: 'Montserrat', serif;
+    font-weight: bolder;
+    cursor: pointer;
+    width: 170px;
+    height: 50px;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    margin-left: 10px;
+}
+#plus img {
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    margin-left: px;
+    margin-bottom: 5px;
+}
+#plus p {
+    margin-left: 8px;
+}
+#plus:hover {
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
+}
+#search {
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 80px;
+}
+#search img {
+    width: 23px;
+    height: 23px;
+}
+#search:hover {
+    transition: background 0.3s ease; 
+    background: rgba(30, 63, 99, 0.61);
+}
+#save {
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+#save img {
+    width: 30px;
+    height: 30px;
+}
+#save:hover {
+    transition: background 0.3s ease; 
+    background: rgba(30, 63, 99, 0.61);
+}
+.sec1 {
+    margin-bottom:15px;
+}
+.today {
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-image: url('https://images2.alphacoders.com/174/thumb-1920-174740.jpg');
+    height: 400px;
+    width: auto;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.sec2 {
+    background: linear-gradient(90deg, rgb(10, 7, 70) 0%, rgba(9,9,121,1) 0%, rgb(102, 119, 122) 62%);
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec2 > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 10px;
+}
+.sec1, .sec2 {
+    width: 100%;
+}
+#discord, #instagram {
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px; 
+    color: #fff;
+    border: 1px solid #fff;
+    font-weight: bolder;
+    display: flex;
+    align-items: center; /* Центрирование по вертикали */
+    font-size: 20px;
+    margin: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#discord img, #instagram img {
+    width: 30px; /* Установите одинаковую ширину для иконок */
+    height: 30px; 
+    margin-right: 10px; /* Отступ справа от иконки */
+}
+
+#discord a, #instagram a {
+    display: flex; /* Сделаем ссылку блочным элементом */
+    align-items: center; /* Центрируем содержимое по вертикали */
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #fff; /* Цвет текста */
+    flex-grow: 1; 
+    justify-content: center;
+}
+#discord:hover, #instagram:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    transform: scale(1.05);
+}
+.knopki {
+    display: flex;
+    flex-direction: row;
+    margin-right: 70px;
+    background-color: transparent; 
+    justify-content: center;
+    margin-right: 0;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+.knopki button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Новый фон при наведении */
+    border: none;
+}
+
+.tops p {
+    color: #fff;
+    font-size: 40px;
+    text-align: start;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.topic {
+    width: 225px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0 auto;
+}
+.topic img {
+    width: 225px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.topic a:hover img {
+    transform: scale(1.1); 
+}
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-container img {
+    width: 225px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-container::after {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    border-radius: 10px; 
+    z-index: 1;
+}
+
+.image-container:hover img {
+    transform: scale(1.1); 
+}
+
+.image-container:hover::after {
+    opacity: 3; 
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.text {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 270px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
+    padding: 5px;
+}
+.overlay {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 50%; /* Центрируем по вертикали */
+    left: 50%; /* Центрируем по горизонтали */
+    transform: translate(-50%, -50%); /* Сдвигаем на 50% по осям X и Y */
+    text-align: center; /* Центрируем текст */
+    opacity: 0; /* Скрываем наложение по умолчанию */
+    transition: opacity 0.3s ease; /* Плавный переход для прозрачности */
+    z-index: 2; /* Устанавливаем z-index для наложения текста и иконки */
+}
+
+.image-container:hover .overlay {
+    opacity: 2; 
+}
+
+.icon {
+    position: absolute; 
+    top: 10px; /* Отступ сверху */
+    left: 110%; /* Отступ справа */
+    z-index: 3;
+    background-color: rgba(180, 159, 159, 0.7);
+    border-radius: 15px;
+    padding: 3px;
+
+}
+
+.icon img {
+    width: 30px; /* Уменьшаем ширину иконки */
+    background-color: rgba(rgb(180, 159, 159), green, blue, alpha);
+    top: 3%; /* Отступ сверху */
+    left: 110%;
+}
+
+.collection {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.collection p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+    font-size: 40px;
+    text-align: start;
+    margin-left: 40px;
+}
+.collectimg {
+    display: flex; 
+    justify-content: center; 
+}
+.collectimg img {
+    width: 200px; /* Установите желаемую ширину изображения */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    max-width: 100%; /* Ограничиваем максимальную ширину для адаптивности */
+    border-radius: 10px;
+    margin: 5px;
+    transition: transform 0.2s ease;
+}
+.collectimg img:hover {
+    transform: scale(1.1);
+    border: 1px solid rgb(69, 112, 177);
+}
+.footer {
+    background-color: #291866; /* Цвет фона футера */
+    color: #ac8888; /* Цвет текста */
+    padding: 20px 0; /* Отступы сверху и снизу */
+}
+
+.footer-container {
+    display: flex; /* Используем flexbox для расположения секций */
+    justify-content: space-around; /* Распределяем секции по горизонтали */
+    max-width: 1200px; /* Максимальная ширина футера */
+    margin: 0 auto; /* Центрируем футер */
+}
+
+.footer-section {
+    flex: 1; /* Каждая секция занимает равное пространство */
+    padding: 0 20px; /* Отступы внутри секций */
+}
+
+.footer-section h2 {
+    margin-bottom: 10px; /* Отступ снизу заголовка */
+}
+
+.footer-section p, .footer-section ul {
+    margin: 0; /* Убираем отступы */
+    line-height: 1.5; /* Высота строки */
+}
+
+.footer-section ul {
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+}
+
+.footer-section ul li {
+    margin: 5px 0; /* Отступы между элементами списка */
+}
+
+.footer-section a {
+    color: #ac8888; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.footer-section a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+.footer-bottom {
+    text-align: center; /* Центрируем текст в нижней части футера */
+    padding: 10px 0; /* Отступы сверху и снизу */
+    background-color: #31275e; /* Цвет фона нижней части футера */
+}
+
+.social-icon {
+    margin-right: 10px; /* Отступ между иконками */
+    color: #fff; /* Цвет текста иконок */
+}
